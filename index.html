@@ -216,7 +216,37 @@
                   
                   
                 >
+                <style>
+                      
+                  .ava-move {
+                    animation: moveDownUp 15s ease-in-out infinite;
+                    animation-delay: 2.5s;
+                  }
+                  @keyframes moveUpDown {
+                    0% {
+                      transform: translateY(0px);
+                    }
+                    50% {
+                      transform: translateY(5px);
+                    }
+                    100% {
+                      transform: translateY(0px);
+                    }
+                  }
+                  @keyframes moveDownUp {
+                    0% {
+                      transform: translateY(0px);
+                    }
+                    50% {
+                      transform: translateY(-20px);
+                    }
+                    100% {
+                      transform: translateY(0px);
+                    }
+                  }
+                </style>
                   <img
+                  class="ava-move"
                     src="./img/ava.png"
                     alt="Layer"
                   />
